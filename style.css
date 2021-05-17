@@ -111,18 +111,19 @@ html {
   }
   .landing .header .nav .item {
     display: none;
-    padding: 10px;
+    padding: 12px 10px;
     margin: 15px;
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
-    background: #141414;
-    border: 2px solid white;
+    background: transparent;
     color: white;
     border-radius: 30px;
     width: 150px;
     margin-left: 30%;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 2px 2px 4px #000, -2px -2px 4px #ffffff5b;
+            box-shadow: 2px 2px 4px #000, -2px -2px 4px #ffffff5b;
   }
   .landing .title {
     background: #00000060;
@@ -142,12 +143,14 @@ html {
             flex-direction: column;
   }
   .landing .title h1 {
+    text-align: center;
     margin-top: -15%;
     margin-bottom: 2%;
     font-size: 60px;
     font-weight: bolder;
   }
   .landing .title h2 {
+    text-align: center;
     font-size: 20px;
     margin-bottom: 10%;
   }
@@ -746,14 +749,29 @@ html {
   }
 }
 
-.home-btn {
-  content: 'amen';
-  font-size: 17px;
-  background: #f1efef;
+.amen {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #303030;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-box-shadow: 3px 3px 7px #000000a0, -3px -3px 7px #fff;
-          box-shadow: 3px 3px 7px #000000a0, -3px -3px 7px #fff;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  -webkit-box-shadow: 3px 3px 7px #000000a0, -1px -1px 2px #fff;
+          box-shadow: 3px 3px 7px #000000a0, -1px -1px 2px #fff;
 }
 /*# sourceMappingURL=style.css.map */
