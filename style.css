@@ -83,7 +83,6 @@ html {
     height: 9vh;
   }
   .landing .header .nav .menu {
-    -webkit-tap-highlight-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -112,6 +111,7 @@ html {
             transform: scale(1.5);
   }
   .landing .header .nav .item {
+    -webkit-tap-highlight-color: transparent;
     display: none;
     padding: 12px 10px;
     margin: 15px;
@@ -165,7 +165,7 @@ html {
 
 @media (min-width: 800px) {
   .nav {
-    margin-left: 55%;
+    margin-left: 50%;
     padding: 10px 12px;
     width: 50%;
     display: -webkit-box;
@@ -179,11 +179,12 @@ html {
             align-items: center;
   }
   .nav .menu {
+    -webkit-tap-highlight-color: transparent;
     display: none;
   }
   .nav .item {
-    -webkit-tap-highlight-color: transparent;
-    padding: 8px 10px;
+    padding: 10px 12px;
+    color: #cecece;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -192,10 +193,12 @@ html {
     transition: 0.3s ease-in-out;
   }
   .nav .item:hover {
-    color: black;
-    background: white;
+    color: white;
+    background: transparent;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    -webkit-box-shadow: 2px 2px 6px #000000, -2px -2px 6px #ffffff6a;
+            box-shadow: 2px 2px 6px #000000, -2px -2px 6px #ffffff6a;
   }
   .title {
     height: 90vh;
@@ -710,6 +713,10 @@ html {
 }
 
 .btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-tap-highlight-color: transparent;
   height: 15vh;
   display: -webkit-box;
@@ -754,8 +761,11 @@ html {
 }
 
 .amen {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-tap-highlight-color: transparent;
-  user-select: none;
   position: fixed;
   bottom: 20px;
   left: 20px;
