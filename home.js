@@ -10,7 +10,7 @@ if (document.documentElement.clientWidth < 500) {
         if(i.classList[1]==="fa-bars"){
             i.classList.remove("fa-bars");
             i.classList.add("fa-times");
-            // menu.style.color = "white";
+            menu.style.color = "#d3d3d3";
             menu.style.marginTop = "2.5vh";
 
             let item = navbar.querySelectorAll(".item");
@@ -53,6 +53,8 @@ if (document.documentElement.clientWidth < 500) {
 
 // scrolling
 
+let landing = document.querySelector(".landing");
+let amen = document.querySelector(".amen");
 let about = document.querySelector(".about");
 let gathering = document.querySelector(".gathering");
 let past = document.querySelector(".past");
@@ -63,6 +65,11 @@ let contact = document.querySelector(".contact");
 let item = document.querySelectorAll(".item");
 let menu = document.querySelector('.menu');
 
+
+
+amen.addEventListener('click',function(){
+    landing.scrollIntoView();
+});
 item[0].addEventListener('click',function(){
     about.scrollIntoView();
     menu.click();
