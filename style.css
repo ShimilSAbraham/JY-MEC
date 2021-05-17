@@ -50,6 +50,7 @@ html {
 }
 
 .landing .header .logo {
+  -webkit-tap-highlight-color: transparent;
   position: absolute;
   left: 1%;
   width: 60px;
@@ -82,6 +83,7 @@ html {
     height: 9vh;
   }
   .landing .header .nav .menu {
+    -webkit-tap-highlight-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -180,6 +182,7 @@ html {
     display: none;
   }
   .nav .item {
+    -webkit-tap-highlight-color: transparent;
     padding: 8px 10px;
     font-size: 18px;
     font-weight: bold;
@@ -707,6 +710,7 @@ html {
 }
 
 .btn {
+  -webkit-tap-highlight-color: transparent;
   height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,6 +754,8 @@ html {
 }
 
 .amen {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
   position: fixed;
   bottom: 20px;
   left: 20px;
