@@ -1,4 +1,4 @@
-if (document.documentElement.clientWidth < 500) {
+if (document.documentElement.clientWidth < 800) {
     
     let header = document.querySelector('.header');
     let navbar = document.querySelector('.nav');
@@ -8,11 +8,13 @@ if (document.documentElement.clientWidth < 500) {
     menu.addEventListener('click',function(){
         let i = menu.querySelector('i');
         if(i.classList[1]==="fa-bars"){
+            document.querySelector('.landing').scrollIntoView();
             i.classList.remove("fa-bars");
             i.classList.add("fa-times");
             menu.style.color = "#d3d3d3";
-            menu.style.marginTop = "2.5vh";
-
+            menu.style.position = "absolute";
+            // menu.style.marginTop = "2.5vh";
+            
             let item = navbar.querySelectorAll(".item");
             header.style.height = "100vh";
             header.style.position = "absolute";
@@ -23,7 +25,7 @@ if (document.documentElement.clientWidth < 500) {
             navbar.style.height = "80vh";
 
             for (var j=0; j<item.length;j++)
-                item[j].style.display = "block";
+            item[j].style.display = "block";
             title.style.display = "none";
             logo.style.display = "none";
         }
@@ -31,7 +33,8 @@ if (document.documentElement.clientWidth < 500) {
             i.classList.remove("fa-times");
             i.classList.add("fa-bars");
             menu.style.color = "black";
-            menu.style.marginTop = "1vh";
+            menu.style.position = "fixed";
+            // menu.style.marginTop = "1vh";
             
             let item = navbar.querySelectorAll(".item");
             header.style.height = "10vh";
@@ -60,7 +63,7 @@ let gathering = document.querySelector(".gathering");
 let past = document.querySelector(".past");
 let oasis = document.querySelector(".oasis");
 let team = document.querySelector(".team");
-let contact = document.querySelector(".contact");
+let footer = document.querySelector("#footer");
 
 let item = document.querySelectorAll(".item");
 let menu = document.querySelector('.menu');
@@ -91,6 +94,6 @@ item[4].addEventListener('click',function(){
     menu.click();
 });
 item[5].addEventListener('click',function(){
-    contact.scrollIntoView();
+    footer.scrollIntoView();
     menu.click();
 });
