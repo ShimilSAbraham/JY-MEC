@@ -85,6 +85,7 @@ body{
         height: 9vh;
         
         .menu{
+          z-index: 10;
           position: fixed;
           right: 20px;
           top: 15px;
@@ -583,22 +584,31 @@ margin-left: 2rem;
   }
 }
 @media (max-width: 575px) {
+  .team-maindiv{
+    position: relative;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
   .container-fluid{
-    margin-top: -50px;
+      margin-top: 30px;
+      padding-top: 80px;
   }
   .row{
     justify-content: center;
     align-items: center;
   }
   #team-title {
+    position: absolute;
+    top: 0;
     text-align: center;
   }
-  .team-maindiv {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #dteam{
+
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 517px) {
@@ -668,6 +678,7 @@ margin-left: 2rem;
     box-shadow: inset 3px 3px 7px #000000a0, inset -1px -1px 2px #ffffff5b;
   }
 }
+
 
 @media (max-width: 800px){
   .glass-btn{

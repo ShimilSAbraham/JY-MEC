@@ -92,6 +92,7 @@ body {
     height: 9vh;
   }
   .landing .header .nav .menu {
+    z-index: 10;
     position: fixed;
     right: 20px;
     top: 15px;
@@ -808,22 +809,9 @@ body {
 }
 
 @media (max-width: 575px) {
-  .container-fluid {
-    margin-top: -50px;
-  }
-  .row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #team-title {
-    text-align: center;
-  }
   .team-maindiv {
-    margin-top: 8rem;
+    position: relative;
+    margin-top: 6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -837,6 +825,26 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .container-fluid {
+    margin-top: 30px;
+    padding-top: 80px;
+  }
+  .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #team-title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+  }
+  #dteam {
+    font-size: 3.5rem;
   }
 }
 
