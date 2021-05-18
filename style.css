@@ -767,11 +767,11 @@ body {
 }
 
 #footer {
-  background: #686868;
+  background: #5e5e5e;
   color: #f1efef;
   padding-top: 4rem;
   padding-bottom: 1rem;
-  max-width: 100vw;
+  width: 100vw;
   /*position: absolute;
   bottom: 0px;*/
 }
