@@ -5,6 +5,8 @@ if (document.documentElement.clientWidth < 800) {
     let menu = document.querySelector('.menu');
     let logo = document.querySelector('.logo');
     let title = document.querySelector('.title');
+
+
     menu.addEventListener('click',function(){
         let i = menu.querySelector('i');
         if(i.classList[1]==="fa-bars"){
