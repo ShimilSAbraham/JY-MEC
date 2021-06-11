@@ -88,7 +88,8 @@ body{
       .nav {
         width: 100vw;
         height: 9vh;
-        
+        display: grid;
+        place-items: center;
         .menu{
           z-index: 10;
           position: fixed;
@@ -113,6 +114,7 @@ body{
           display: none;
           padding: 12px 10px;
           margin: 15px;
+          margin-bottom: 3%;
           font-size: 18px;
           font-weight: bolder;
           text-align: center;
@@ -120,8 +122,7 @@ body{
           color: white;
           border-radius: 30px;
           width: 150px;
-          margin-left: 30vw;
-          margin-bottom: 30px;
+          height: 50px;
           box-shadow: 2px 2px 4px #000, -2px -2px 4px #ffffff5b;
         }
       }
@@ -212,7 +213,7 @@ body{
   }
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 800px) and (max-width: 1100px) {
   .landing{
     .title{
       h1{
@@ -288,17 +289,78 @@ $para: #3d3d3d;
     .image{
       width: 50vw;
       height: 80vh;
+      // background: red;
+
       @include flexbox();
-      margin-left: -100px;
+      margin-left: -3rem;
       img{
-        width: 450px;
+        width: 70%;
         border-radius: 30px;
       }
     }
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1120px){
+  .about{
+    .about-content{
+      .title{
+        h1{
+          font-size: 50px;
+        }
+      }
+      .image{
+        width: 45vw;
+        height: 70vh;
+        margin-left: 0px;
+        img{
+          width: 90%;
+        }
+    }
+  }
+  }
+}
+
+@media (min-width: 530px) and (max-width:800px){
+  .about{
+    @include flexbox();
+    .about-content{
+      overflow: hidden;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+      height: 85vh;
+      .title{
+        flex-direction: column;
+        width: 80vw;
+        margin-left: 0;
+        h1{
+          font-size: 3rem;
+          margin-top: -2%;
+        }
+        p{
+          margin-top: 0%;
+          font-size: 1.1rem;
+          text-align: center;
+          font-weight: bold;
+
+        }
+      }
+      .image{
+        width: 60vw;
+        height: 80vh;
+        margin-left: 0px;
+        margin-bottom: -10%;
+        margin-top: 2%;
+        img{
+          width: 95%;
+        }
+    }
+    }
+  }
+}
+@media (max-width: 530px){
   .about{
     @include flexbox();
     .about-content{
@@ -316,7 +378,7 @@ $para: #3d3d3d;
         }
         p{
           margin: 0;
-          margin-top: 20px;
+          margin-top: -1%;
           text-align: center;
           font-size: 18px;
           font-weight: bold;
@@ -327,6 +389,7 @@ $para: #3d3d3d;
         margin: 0;
         width: 100%;
         height: 40vh;
+        margin-bottom: 1%;
         img{
           width: 80%;
           border-radius: 5px;
@@ -754,14 +817,20 @@ margin-left: 2rem;
 }
 
 
+@media (min-width:600px) and (max-width: 800px){
+  .glass-btn{
+    margin-top: -8%;
+  }
+}
+
 @media (max-width: 800px){
   .glass-btn{
     height: 60px;
-    width: 170px;
+    width: 200px;
     border-radius: 50px;
     box-shadow: 3px 3px 7px #000000a0, -3px -3px 7px #fff;
     a{
-      padding: 10px 20px;
+      padding: 0.6rem 2rem;
       border-radius: 50px;
     }
   }
@@ -770,6 +839,12 @@ margin-left: 2rem;
   }
   .amen{
     display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .glass-btn{
+    margin-top: -5%;
   }
 }
 
