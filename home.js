@@ -34,6 +34,9 @@ if (document.documentElement.clientWidth < 800) {
         else{
             i.classList.remove("fa-times");
             i.classList.add("fa-bars");
+
+            // document.getElementsByTagName('body').style.backgroundColor = "orange";
+
             menu.style.color = "black";
             menu.style.position = "fixed";
             // menu.style.marginTop = "1vh";
@@ -99,3 +102,12 @@ item[5].addEventListener('click',function(){
     footer.scrollIntoView();
     menu.click();
 });
+
+
+
+// image zooming
+
+let g_image = gathering.querySelectorAll(".images img");
+g_image[0].addEventListener("click", (e) =>{
+    console.log(e)
+})

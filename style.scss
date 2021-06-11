@@ -408,6 +408,7 @@ $para: #3d3d3d;
   overflow: hidden;
   .content{
     height: 50vh;
+    margin-bottom: -3%;
     @include flexbox();
     flex-direction: column;
     h1{
@@ -428,10 +429,25 @@ $para: #3d3d3d;
   }
   .images{
     height: 35vh;
+    margin-bottom: 1%;
     @include flexbox();
     justify-content: space-around;
     img{
       border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1350px){
+  .gathering{
+
+    .content{
+      margin-bottom: -6%;
+    }
+    .images{
+      img{
+        width: 22%;
+      }
     }
   }
 }
@@ -441,6 +457,7 @@ $para: #3d3d3d;
     @include flexbox();
     flex-direction: column;
     .content{
+      margin-top: 5%;
       height: 40vh;
       h1{
         width: 70%;
@@ -457,8 +474,8 @@ $para: #3d3d3d;
       }
     }
     .images{
-      margin-top: -5%;
-      margin-bottom: 5%;
+      margin-top: -3%;
+      margin-bottom: 4%;
       height: 45vh;
       width: 80%;
       flex-wrap: wrap;
@@ -467,6 +484,15 @@ $para: #3d3d3d;
         height: 120px;
       }
     }
+    a{
+      margin-top: -2%;
+    }
+
+    // .g_image{
+    //   position: absolute;
+    //   transform: scale(2.5) translateY(-40%);
+
+    // }
   }
 }
 
@@ -503,6 +529,21 @@ $para: #3d3d3d;
       font-size: 30px;
       letter-spacing: 1.1px;
       color: rgb(71, 71, 71);
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1350px){
+  .past{
+
+    .content{
+      margin-bottom: -6%;
+    }
+    .images{
+      margin-left: 2%;
+      .image img{
+        width: 95%;
+      }
     }
   }
 }
@@ -584,6 +625,21 @@ $para: #3d3d3d;
       font-size: 30px;
       letter-spacing: 1.1px;
       color: rgb(71, 71, 71);
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1350px){
+  .oasis{
+
+    .content{
+      margin-bottom: -6%;
+    }
+    .images{
+      margin-left: 2%;
+      .image img{
+        width: 95%;
+      }
     }
   }
 }
@@ -680,30 +736,29 @@ margin-left: 2rem;
 
 #footer{
   .glass-btn{
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
+    font-size: 22px;
+    width: 180px;
+    height: 60px;
     border-radius: 50px;
     color: $bg;
     box-shadow: 2px 2px 4px #000000a0, -2px -2px 4px #ffffff5b;
+    color: #9c9c9c;
+    transition: 0.5s ease;
+    &:hover{
+      color: #fff;
+    }
     &:active{
       box-shadow: inset 3px 3px 7px #000000a0, inset -3px -3px 7px #fff;
-    }
-    a{
-      color: #9c9c9c;
-      border-radius: 50px;
-      padding: 10px 20px;
-      transition: 0.5s ease;
-      &:hover{
-        color: #fff;
-      }
     }
   }
 }
 
-@media (max-width: 651px) and (min-width: 576px) {
+@media (max-width: 800px) and (min-width: 576px) {
   #dteam {
     font-size: 3.3rem;
+  }
+  #footer{
+    min-height: 60vh;
   }
 }
 @media (max-width: 575px) {
@@ -717,7 +772,7 @@ margin-left: 2rem;
 
   }
   .container-fluid{
-      margin-top: 30px;
+      margin-top: -10%;
       padding-top: 80px;
   }
   .row{
@@ -730,7 +785,7 @@ margin-left: 2rem;
     text-align: center;
   }
   #dteam{
-
+    margin-top: -15%;
     font-size: 3.5rem;
   }
 }
@@ -774,17 +829,11 @@ margin-left: 2rem;
   font-weight: bold;
   border-radius: 20px;
   box-shadow: 5px 5px 10px #000000a0, -5px -5px 10px #fff;
+  text-decoration: none;
   cursor: pointer;
-  a{
-    text-decoration: none;
-    display: block;
-    color: rgb(53, 53, 53);
-    padding: 15px 35px;
-    border-radius: 20px;
-    transition: 0.5s ease;
-    &:hover{
-      color: black;
-    }
+  transition: 0.5s ease;
+  &:hover{
+    color: black;
   }
 }
 .glass-btn:active{
@@ -829,10 +878,6 @@ margin-left: 2rem;
     width: 200px;
     border-radius: 50px;
     box-shadow: 3px 3px 7px #000000a0, -3px -3px 7px #fff;
-    a{
-      padding: 0.6rem 2rem;
-      border-radius: 50px;
-    }
   }
   .glass-btn:active{
     box-shadow: inset 3px 3px 7px #000000a0, inset -3px -3px 7px #fff;
@@ -845,6 +890,8 @@ margin-left: 2rem;
 @media (max-width: 600px){
   .glass-btn{
     margin-top: -5%;
+    width: 180px;
+    font-size: 24px;
   }
 }
 

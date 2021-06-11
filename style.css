@@ -496,6 +496,7 @@ body {
 
 .gathering .content {
   height: 50vh;
+  margin-bottom: -3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,6 +531,7 @@ body {
 
 .gathering .images {
   height: 35vh;
+  margin-bottom: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,6 +547,15 @@ body {
 
 .gathering .images img {
   border-radius: 10px;
+}
+
+@media (min-width: 800px) and (max-width: 1350px) {
+  .gathering .content {
+    margin-bottom: -6%;
+  }
+  .gathering .images img {
+    width: 22%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -564,6 +575,7 @@ body {
             flex-direction: column;
   }
   .gathering .content {
+    margin-top: 5%;
     height: 40vh;
   }
   .gathering .content h1 {
@@ -580,8 +592,8 @@ body {
     text-align: center;
   }
   .gathering .images {
-    margin-top: -5%;
-    margin-bottom: 5%;
+    margin-top: -3%;
+    margin-bottom: 4%;
     height: 45vh;
     width: 80%;
     -ms-flex-wrap: wrap;
@@ -590,6 +602,9 @@ body {
   .gathering .images img {
     width: 120px;
     height: 120px;
+  }
+  .gathering a {
+    margin-top: -2%;
   }
 }
 
@@ -658,6 +673,18 @@ body {
   font-size: 30px;
   letter-spacing: 1.1px;
   color: #474747;
+}
+
+@media (min-width: 800px) and (max-width: 1350px) {
+  .past .content {
+    margin-bottom: -6%;
+  }
+  .past .images {
+    margin-left: 2%;
+  }
+  .past .images .image img {
+    width: 95%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -784,6 +811,18 @@ body {
   color: #474747;
 }
 
+@media (min-width: 800px) and (max-width: 1350px) {
+  .oasis .content {
+    margin-bottom: -6%;
+  }
+  .oasis .images {
+    margin-left: 2%;
+  }
+  .oasis .images .image img {
+    width: 95%;
+  }
+}
+
 @media (max-width: 800px) {
   .oasis {
     display: -webkit-box;
@@ -902,13 +941,20 @@ body {
 }
 
 #footer .glass-btn {
-  font-size: 20px;
-  width: 150px;
-  height: 50px;
+  font-size: 22px;
+  width: 180px;
+  height: 60px;
   border-radius: 50px;
   color: #f1efef;
   -webkit-box-shadow: 2px 2px 4px #000000a0, -2px -2px 4px #ffffff5b;
           box-shadow: 2px 2px 4px #000000a0, -2px -2px 4px #ffffff5b;
+  color: #9c9c9c;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#footer .glass-btn:hover {
+  color: #fff;
 }
 
 #footer .glass-btn:active {
@@ -916,21 +962,12 @@ body {
           box-shadow: inset 3px 3px 7px #000000a0, inset -3px -3px 7px #fff;
 }
 
-#footer .glass-btn a {
-  color: #9c9c9c;
-  border-radius: 50px;
-  padding: 10px 20px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-#footer .glass-btn a:hover {
-  color: #fff;
-}
-
-@media (max-width: 651px) and (min-width: 576px) {
+@media (max-width: 800px) and (min-width: 576px) {
   #dteam {
     font-size: 3.3rem;
+  }
+  #footer {
+    min-height: 60vh;
   }
 }
 
@@ -953,7 +990,7 @@ body {
             align-items: center;
   }
   .container-fluid {
-    margin-top: 30px;
+    margin-top: -10%;
     padding-top: 80px;
   }
   .row {
@@ -970,6 +1007,7 @@ body {
     text-align: center;
   }
   #dteam {
+    margin-top: -15%;
     font-size: 3.5rem;
   }
 }
@@ -1032,20 +1070,13 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px #000000a0, -5px -5px 10px #fff;
           box-shadow: 5px 5px 10px #000000a0, -5px -5px 10px #fff;
-  cursor: pointer;
-}
-
-.glass-btn a {
   text-decoration: none;
-  display: block;
-  color: #353535;
-  padding: 15px 35px;
-  border-radius: 20px;
+  cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.glass-btn a:hover {
+.glass-btn:hover {
   color: black;
 }
 
@@ -1109,10 +1140,6 @@ body {
     -webkit-box-shadow: 3px 3px 7px #000000a0, -3px -3px 7px #fff;
             box-shadow: 3px 3px 7px #000000a0, -3px -3px 7px #fff;
   }
-  .glass-btn a {
-    padding: 0.6rem 2rem;
-    border-radius: 50px;
-  }
   .glass-btn:active {
     -webkit-box-shadow: inset 3px 3px 7px #000000a0, inset -3px -3px 7px #fff;
             box-shadow: inset 3px 3px 7px #000000a0, inset -3px -3px 7px #fff;
@@ -1125,6 +1152,8 @@ body {
 @media (max-width: 600px) {
   .glass-btn {
     margin-top: -5%;
+    width: 180px;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
