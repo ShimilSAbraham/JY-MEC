@@ -1,0 +1,63 @@
+#shootingStar #Vector_2{
+	animation: shoot 2s ease infinite 1.8s both alternate;
+}
+
+
+#shootingStar #Vector_4{
+	animation: shoot 2s ease infinite both alternate;
+}
+
+@keyframes shoot{
+	from{
+		fill: black;
+		fill-opacity: 0.11;
+	}
+	to{
+		fill: #f07909;
+		fill-opacity: 0.5;
+	}
+		
+}
+
+#lightStars #small{
+	transform-origin: 25% 25%;
+	animation: twinkle 4s ease infinite both alternate;
+}
+
+#lightStars #med{
+	transform-origin: 75% 76%;
+	animation: twinkle 4s ease infinite both alternate-reverse	;
+}
+
+#greyStars #small{
+	animation: blink 5s ease infinite both alternate;
+}
+
+#greyStars #med{	
+	animation: blink 5s ease infinite both alternate-reverse;
+}
+
+@keyframes twinkle{
+	from{
+		transform: scale(0);
+		fill-opacity: 0.11;
+
+	}
+	to{
+		fill-opacity: 0.3;
+		transform: scale(0.7);
+	}
+		
+}
+
+
+@keyframes blink{
+	from{
+		fill-opacity: 0.11;
+
+	}
+	to{
+		fill-opacity: 0.7;
+	}
+		
+}

@@ -13,30 +13,29 @@ html {
 
 body {
   background: #f1efef;
+  overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 14px;
-  height: 14px;
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  width: 10px;
-  background: linear-gradient(141deg, #49424a 13%, #949494 40%);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(238deg, #000000 12%, #787878 59%);
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f1efef;
-}
-
-::-webkit-scrollbar-corner {
-  background: transparent;
+@media (min-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    width: 10px;
+    background: linear-gradient(141deg, #49424a 13%, #949494 40%);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(238deg, #000000 12%, #787878 59%);
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1efef;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 }
 
 .landing {
@@ -303,6 +302,10 @@ body {
   overflow: hidden;
 }
 
+.about .grey, .about .light {
+  display: none;
+}
+
 .about .about-content {
   height: 80vh;
   display: -webkit-box;
@@ -360,7 +363,7 @@ body {
 }
 
 .about .about-content .image img {
-  width: 70%;
+  width: 60%;
   border-radius: 30px;
 }
 
@@ -494,6 +497,10 @@ body {
   overflow: hidden;
 }
 
+.gathering .grey, .gathering .light {
+  display: none;
+}
+
 .gathering .content {
   height: 50vh;
   margin-bottom: -3%;
@@ -547,6 +554,15 @@ body {
 
 .gathering .images img {
   border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.gathering .images .g_image {
+  position: absolute;
+  -webkit-transform: scale(4) translateY(-20%);
+          transform: scale(4) translateY(-20%);
+  border-radius: 5px;
 }
 
 @media (min-width: 800px) and (max-width: 1350px) {
@@ -577,6 +593,8 @@ body {
   .gathering .content {
     margin-top: 5%;
     height: 40vh;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .gathering .content h1 {
     width: 70%;
@@ -602,9 +620,23 @@ body {
   .gathering .images img {
     width: 120px;
     height: 120px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .gathering .images .g_image {
+    position: absolute;
+    -webkit-transform: scale(4) translateY(-20%);
+            transform: scale(4) translateY(-20%);
   }
   .gathering a {
     margin-top: -2%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gathering .images .g_image {
+    -webkit-transform: scale(2.5) translateY(-50%);
+            transform: scale(2.5) translateY(-50%);
   }
 }
 
@@ -612,6 +644,10 @@ body {
   height: 100vh;
   background: #f1efef;
   overflow: hidden;
+}
+
+.past .light {
+  display: none;
 }
 
 .past .content {
@@ -737,6 +773,10 @@ body {
   height: 100vh;
   background: #f1efef;
   overflow: hidden;
+}
+
+.oasis .grey {
+  display: none;
 }
 
 .oasis .content {
@@ -874,6 +914,10 @@ body {
   overflow: hidden;
 }
 
+.team .shootStar, .team .light {
+  display: none;
+}
+
 .team .team-maindiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -897,11 +941,13 @@ body {
 .team-img {
   height: 5rem;
   border-radius: 50%;
+  z-index: 5;
 }
 
 #team-title {
   text-align: center;
   font-weight: bolder;
+  z-index: 5;
 }
 
 #dteam {
@@ -990,6 +1036,7 @@ body {
             align-items: center;
   }
   .container-fluid {
+    background: #f1efef;
     margin-top: -10%;
     padding-top: 80px;
   }
@@ -1009,6 +1056,11 @@ body {
   #dteam {
     margin-top: -15%;
     font-size: 3.5rem;
+    z-index: 50;
+  }
+  .team {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1efef), color-stop(60%, #3d3d3d));
+    background: linear-gradient(to bottom, #f1efef 0% 60%, #3d3d3d 60% 10%);
   }
 }
 
@@ -1154,6 +1206,94 @@ body {
     margin-top: -5%;
     width: 180px;
     font-size: 24px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about .light {
+    position: absolute;
+    display: block;
+    -webkit-transform: translate(8vw, 33vh);
+            transform: translate(8vw, 33vh);
+  }
+  .about .light object {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .about .grey {
+    position: absolute;
+    display: block;
+    -webkit-transform: translate(85vw, -35vh);
+            transform: translate(85vw, -35vh);
+  }
+  .about .grey object {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .gathering {
+    overflow: hidden;
+  }
+  .gathering .content {
+    z-index: 2;
+  }
+  .gathering .light {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(75vw, 5vh);
+            transform: translate(75vw, 5vh);
+    z-index: 1;
+  }
+  .gathering .light object {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .gathering .grey {
+    -webkit-transform: translate(3vw, 60vh);
+            transform: translate(3vw, 60vh);
+    position: absolute;
+    display: block;
+    z-index: 0;
+  }
+  .gathering .grey object {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .past .light {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(0vw, 60vh);
+            transform: translate(0vw, 60vh);
+  }
+  .past .light object {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .oasis .grey {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(87vw, 25vh);
+            transform: translate(87vw, 25vh);
+    z-index: 0;
+  }
+  .team .shootStar {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(34vw, -7vh);
+            transform: translate(34vw, -7vh);
+  }
+  .team .shootStar object {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .team .light {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(82vw, 50vh);
+            transform: translate(82vw, 50vh);
+  }
+  .team .light object {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -35,8 +35,6 @@ if (document.documentElement.clientWidth < 800) {
             i.classList.remove("fa-times");
             i.classList.add("fa-bars");
 
-            // document.getElementsByTagName('body').style.backgroundColor = "orange";
-
             menu.style.color = "black";
             menu.style.position = "fixed";
             // menu.style.marginTop = "1vh";
@@ -107,7 +105,21 @@ item[5].addEventListener('click',function(){
 
 // image zooming
 
-let g_image = gathering.querySelectorAll(".images img");
-g_image[0].addEventListener("click", (e) =>{
-    console.log(e)
-})
+
+//Gathering page
+// let g_image = gathering.querySelectorAll(".images img");
+
+// g_image[0].addEventListener("click", () => {
+//     g_image[0].classList.add("g_image");
+//     gathering.querySelector(".content").style.opacity = "0";
+//     gathering.querySelector(".glass-btn").style.display = "none";
+//     document.addEventListener('mouseup', function(e) {
+//         if (!g_image[0].contains(e.target)) {
+//             g_image[0].classList.remove("g_image");
+//             gathering.querySelector(".content").style.opacity = "1";
+//             gathering.querySelector(".glass-btn").style.display = "flex";
+//         }
+//     });
+// });
+
+

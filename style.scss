@@ -19,7 +19,12 @@ html {
 }
 body{
   background: $bg;
+  overflow-x: hidden;
 }
+
+@media (min-width:800px)
+{
+
 ::-webkit-scrollbar {
   width: 14px;
   height: 14px;
@@ -39,6 +44,8 @@ body{
  ::-webkit-scrollbar-corner{
    background: transparent;
  }
+
+}
 
 //-----------------landing Page---------------------
 
@@ -266,6 +273,9 @@ $para: #3d3d3d;
   display: flex;
   align-items: center;
   overflow: hidden;
+  .grey, .light{
+    display: none;
+  }
   .about-content{
     height: 80vh;
     @include flexbox();
@@ -294,12 +304,13 @@ $para: #3d3d3d;
       @include flexbox();
       margin-left: -3rem;
       img{
-        width: 70%;
+        width: 60%;
         border-radius: 30px;
       }
     }
   }
 }
+
 
 @media (max-width: 1120px){
   .about{
@@ -406,6 +417,9 @@ $para: #3d3d3d;
   height: 100vh;
   background: $bg;
   overflow: hidden;
+  .grey, .light{
+    display: none;
+  }
   .content{
     height: 50vh;
     margin-bottom: -3%;
@@ -434,6 +448,13 @@ $para: #3d3d3d;
     justify-content: space-around;
     img{
       border-radius: 10px;
+      transition: 0.5s ease;
+    }
+    .g_image{
+      position: absolute;
+      transform: scale(4) translateY(-20%);
+      border-radius: 5px;
+      
     }
   }
 }
@@ -459,6 +480,7 @@ $para: #3d3d3d;
     .content{
       margin-top: 5%;
       height: 40vh;
+      transition: 0.5s ease;
       h1{
         width: 70%;
         text-align: center;
@@ -482,17 +504,29 @@ $para: #3d3d3d;
       img{
         width: 120px;
         height: 120px;
+        transition: 0.5s ease;
+
+      }
+      .g_image{
+        position: absolute;
+        transform: scale(4) translateY(-20%);
+        
       }
     }
     a{
       margin-top: -2%;
     }
 
-    // .g_image{
-    //   position: absolute;
-    //   transform: scale(2.5) translateY(-40%);
+  }
+}
 
-    // }
+@media (max-width: 500px){
+  .gathering{
+    .images{
+      .g_image{
+        transform: scale(2.5) translateY(-50%);
+      }
+    }
   }
 }
 
@@ -503,6 +537,9 @@ $para: #3d3d3d;
   height: 100vh;
   background: $bg;
   overflow: hidden;
+  .light{
+    display: none;
+  }
   .content{
     height: 40vh;
     @include flexbox();
@@ -589,6 +626,9 @@ $para: #3d3d3d;
   height: 100vh;
   background: $bg;
   overflow: hidden;
+  .grey{
+    display: none;
+  }
   .content{
     height: 40vh;
     @include flexbox();
@@ -683,6 +723,9 @@ $para: #3d3d3d;
   min-height: 100vh;
   background: $bg;
   overflow: hidden;
+  .shootStar, .light{
+    display: none;
+  }
   .team-maindiv{
     display: flex;
     flex-direction: column;
@@ -696,11 +739,14 @@ $para: #3d3d3d;
 .team-img {
   height: 5rem;
   border-radius: 50%;
+  z-index: 5;
 }
+
 
 #team-title {
   text-align: center;
   font-weight: bolder;
+  z-index: 5;
 }
 #dteam {
   font-size: 4rem;
@@ -772,6 +818,7 @@ margin-left: 2rem;
 
   }
   .container-fluid{
+    background: $bg;
       margin-top: -10%;
       padding-top: 80px;
   }
@@ -786,7 +833,11 @@ margin-left: 2rem;
   }
   #dteam{
     margin-top: -15%;
-    font-size: 3.5rem;
+    font-size: 3.5rem; 
+    z-index: 50;
+  }
+  .team{
+    background: linear-gradient(to bottom, $bg 0% 60%,rgb(61, 61, 61) 60% 10%);
   }
 }
 @media (max-width: 517px) {
@@ -892,6 +943,90 @@ margin-left: 2rem;
     margin-top: -5%;
     width: 180px;
     font-size: 24px;
+  }
+}
+
+
+@media (min-width:1300px){
+  .about{
+    .light{
+      position: absolute;
+      display: block;
+      transform: translate(8vw,33vh);
+      object{
+        transform: scale(0.8);
+      }
+    }
+    .grey{
+      position: absolute;
+      display: block;
+      transform: translate(85vw,-35vh);
+      object{
+        transform: scale(0.9);
+      }
+    }
+  }
+  .gathering{
+    overflow: hidden;
+    .content{
+      z-index: 2;
+    }
+    .light{
+      display: block;
+      position: absolute;
+      transform: translate(75vw,5vh);
+      z-index: 1;
+      object{
+        transform: scale(1);
+      } 
+    }
+    .grey{
+      transform: translate(3vw,60vh);
+      position: absolute;
+      display: block;
+      z-index: 0;
+      object{
+        transform: scale(0.9);
+      }
+    }
+  }
+  .past{
+    .light{
+      display: block;
+      position: absolute;
+      transform: translate(0vw,60vh);
+      object{
+        transform: scale(0.9);
+      }
+    }
+  }
+  .oasis{
+    .grey{
+      display: block;
+      position: absolute;
+      transform: translate(87vw,25vh);
+      z-index: 0;
+    }
+  }
+  .team{
+    .shootStar{
+      display: block;
+      position: absolute;
+      transform: translate(34vw,-7vh);
+      // z-index: 1;
+      object{
+        transform: scale(0.7);
+      }
+    }
+    .light{
+      display: block;
+      position: absolute;
+      transform: translate(82vw,50vh);
+      // z-index: 1;
+      object{
+        transform: scale(0.5);
+      }
+    }
   }
 }
 
