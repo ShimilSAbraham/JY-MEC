@@ -65,6 +65,7 @@ let footer = document.querySelector("#footer");
 let item = document.querySelectorAll(".item");
 let menu = document.querySelector(".menu");
 
+// eda, i think you could use a loop here to make the code cleaner and shorter lol :)
 amen.addEventListener("click", function () {
   landing.scrollIntoView();
 });
@@ -91,6 +92,15 @@ item[4].addEventListener("click", function () {
 item[5].addEventListener("click", function () {
   footer.scrollIntoView();
   menu.click();
+});
+
+// toggling image modal
+const images = document.querySelectorAll(".img");
+const modalImg = document.querySelector("#modal-img");
+images.forEach((img) => {
+  img.addEventListener("click", () => {
+    modalImg.src = img.src;
+  });
 });
 
 // image zooming
