@@ -721,6 +721,9 @@ $para: #3d3d3d;
 
 
 //-------------------Team----------------
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+
 .team{
   min-height: 100vh;
   background: $bg;
@@ -729,19 +732,41 @@ $para: #3d3d3d;
     display: none;
   }
   .team-maindiv{
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  p{
-    font-weight: bold;
+  .team-maindiv p{
+    font-weight: 600;
+    margin-top: 3%;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
   }
 }
+.team-img-cont{
+  margin-bottom: 3%;
+}
 .team-img {
-  height: 5rem;
+  transform: scale(1.4) translateY(-3%);
+    height: 5rem;
   border-radius: 50%;
   z-index: 5;
+}
+@media (max-width: 570px){
+  .team-img{
+    transform: scale(1.5);
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .team-img-cont{
+    margin-bottom: initial;
+  }
+  .team-maindiv p{
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+  }
 }
 
 
@@ -751,6 +776,7 @@ $para: #3d3d3d;
   z-index: 5;
 }
 #dteam {
+  font-family: "Poiret One", cursive;
   font-size: 4rem;
 }
 .subrows {
@@ -880,7 +906,7 @@ margin-left: 2rem;
   height: 70px;
   font-size: 27px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 50px;
   box-shadow: 5px 5px 10px #000000a0, -5px -5px 10px #fff;
   text-decoration: none;
   cursor: pointer;
@@ -1014,7 +1040,7 @@ margin-left: 2rem;
     .shootStar{
       display: block;
       position: absolute;
-      transform: translate(34vw,-7vh);
+      transform: translate(34vw,15vh);
       // z-index: 1;
       object{
         transform: scale(0.7);

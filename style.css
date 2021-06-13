@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -920,6 +921,7 @@ body {
 }
 
 .team .team-maindiv {
+  padding: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,14 +937,39 @@ body {
           align-items: center;
 }
 
-.team p {
-  font-weight: bold;
+.team .team-maindiv p {
+  font-weight: 600;
+  margin-top: 3%;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.team-img-cont {
+  margin-bottom: 3%;
 }
 
 .team-img {
+  -webkit-transform: scale(1.4) translateY(-3%);
+          transform: scale(1.4) translateY(-3%);
   height: 5rem;
   border-radius: 50%;
   z-index: 5;
+}
+
+@media (max-width: 570px) {
+  .team-img {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .team-img-cont {
+    margin-bottom: initial;
+  }
+  .team-maindiv p {
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+  }
 }
 
 #team-title {
@@ -952,6 +979,7 @@ body {
 }
 
 #dteam {
+  font-family: "Poiret One", cursive;
   font-size: 4rem;
 }
 
@@ -1120,7 +1148,7 @@ body {
   height: 70px;
   font-size: 27px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 50px;
   -webkit-box-shadow: 5px 5px 10px #000000a0, -5px -5px 10px #fff;
           box-shadow: 5px 5px 10px #000000a0, -5px -5px 10px #fff;
   text-decoration: none;
@@ -1279,8 +1307,8 @@ body {
   .team .shootStar {
     display: block;
     position: absolute;
-    -webkit-transform: translate(34vw, -7vh);
-            transform: translate(34vw, -7vh);
+    -webkit-transform: translate(34vw, 15vh);
+            transform: translate(34vw, 15vh);
   }
   .team .shootStar object {
     -webkit-transform: scale(0.7);
