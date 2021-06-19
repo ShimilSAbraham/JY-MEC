@@ -95,28 +95,10 @@ item[5].addEventListener("click", function () {
 });
 
 // toggling image modal
-const images = document.querySelectorAll(".img");
+const images = document.querySelectorAll(".modalPopupImage");
 const modalImg = document.querySelector("#modal-img");
 images.forEach((img) => {
   img.addEventListener("click", () => {
     modalImg.src = img.src;
   });
 });
-
-// image zooming
-
-//Gathering page
-// let g_image = gathering.querySelectorAll(".images img");
-
-// g_image[0].addEventListener("click", () => {
-//     g_image[0].classList.add("g_image");
-//     gathering.querySelector(".content").style.opacity = "0";
-//     gathering.querySelector(".glass-btn").style.display = "none";
-//     document.addEventListener('mouseup', function(e) {
-//         if (!g_image[0].contains(e.target)) {
-//             g_image[0].classList.remove("g_image");
-//             gathering.querySelector(".content").style.opacity = "1";
-//             gathering.querySelector(".glass-btn").style.display = "flex";
-//         }
-//     });
-// });

@@ -1029,5 +1029,8 @@ body {
     transform: scale(0.5);
   }
 }
+body.modal-open {
+  overflow-y: inherit;
+}
 
 /*# sourceMappingURL=style.css.map */

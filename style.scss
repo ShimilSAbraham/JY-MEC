@@ -1042,3 +1042,8 @@ $para: #3d3d3d;
     }
   }
 }
+
+// hack to fix a bootstrap bug of page shifting slightly on modal-open
+body.modal-open {
+  overflow-y: inherit;
+}
