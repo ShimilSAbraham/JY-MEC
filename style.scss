@@ -426,7 +426,7 @@ $para: #3d3d3d;
       line-height: 1.2em;
       letter-spacing: 0.5px;
       margin-top: 2%;
-      width: 50%;
+      width: 64%;
       text-align: center;
     }
   }
@@ -440,12 +440,11 @@ $para: #3d3d3d;
       z-index: 10;
       border-radius: 10px;
       transition: 0.5s ease;
+      transform: scale(0.85);
     }
-    .g_image {
-      position: absolute;
-      transform: scale(4) translateY(-20%);
-      border-radius: 5px;
-    }
+  }
+  a{
+    margin-top: 4%;
   }
 }
 
@@ -453,11 +452,6 @@ $para: #3d3d3d;
   .gathering {
     .content {
       margin-bottom: -6%;
-    }
-    .images {
-      img {
-        width: 22%;
-      }
     }
   }
 }
@@ -478,7 +472,7 @@ $para: #3d3d3d;
         font-weight: bold;
       }
       p {
-        width: 70%;
+        width: 80%;
         font-size: 18px;
         letter-spacing: 0.5px;
         text-align: center;
@@ -494,10 +488,7 @@ $para: #3d3d3d;
         width: 120px;
         height: 120px;
         transition: 0.5s ease;
-      }
-      .g_image {
-        position: absolute;
-        transform: scale(4) translateY(-20%);
+        transform: scale(1);
       }
     }
     a {
@@ -508,9 +499,20 @@ $para: #3d3d3d;
 
 @media (max-width: 500px) {
   .gathering {
-    .images {
-      .g_image {
-        transform: scale(2.5) translateY(-50%);
+    .content {
+      margin-top: 5%;
+      margin-bottom: 1%;
+      height: 40vh;
+      transition: 0.5s ease;
+      h1 {
+        width: 80%;
+        font-size: 42px;
+      }
+      p {
+        width: 85%;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        text-align: center;
       }
     }
   }
@@ -542,7 +544,7 @@ $para: #3d3d3d;
       line-height: 1.2em;
       letter-spacing: 0.5px;
       margin-top: 3%;
-      width: 50%;
+      width: 60%;
       text-align: center;
     }
   }
@@ -554,6 +556,7 @@ $para: #3d3d3d;
     justify-content: space-around;
     img {
       border-radius: 10px;
+      transform: scale(0.85);
     }
     h3 {
       @include flexbox();
@@ -610,6 +613,32 @@ $para: #3d3d3d;
         font-size: 20px;
         letter-spacing: 0.5px;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .past {
+    .content {
+      margin-top: -5%;
+      margin-bottom: 1%;
+      height: 40vh;
+      transition: 0.5s ease;
+      h1 {
+        width: 80%;
+        font-size: 42px;
+      }
+      p {
+        width: 85%;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 0%;
+      }
+    }
+    .images{
+      margin-top: -10%;
     }
   }
 }
@@ -994,7 +1023,7 @@ $para: #3d3d3d;
       }
     }
     .grey {
-      transform: translate(3vw, 60vh);
+      transform: translate(3vw, 75vh);
       position: absolute;
       display: block;
       z-index: 0;
