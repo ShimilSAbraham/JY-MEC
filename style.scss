@@ -526,6 +526,10 @@ $para: #3d3d3d;
         text-align: center;
       }
     }
+    .images{
+      margin-top: -5%;
+      margin-bottom: 1%;
+    }
   }
 }
 
@@ -679,7 +683,8 @@ $para: #3d3d3d;
       line-height: 1.2em;
       letter-spacing: 0.5px;
       margin-top: 2%;
-      width: 50%;
+      width: 65%;
+      margin-bottom: 2%;
       text-align: center;
     }
   }
@@ -691,6 +696,7 @@ $para: #3d3d3d;
     justify-content: space-around;
     img {
       border-radius: 10px;
+      transform: scale(0.85);
     }
     h3 {
       @include flexbox();
@@ -700,6 +706,9 @@ $para: #3d3d3d;
       letter-spacing: 1.1px;
       color: rgb(71, 71, 71);
     }
+  }
+  a{
+    margin-top: 3%;
   }
 }
 
@@ -732,13 +741,14 @@ $para: #3d3d3d;
     }
     .images {
       margin-top: -5%;
-      margin-bottom: 5%;
+      margin-bottom: -7%;
       height: 55vh;
       width: 80%;
       flex-wrap: wrap;
       img {
         width: 120px;
         height: 120px;
+        transform: scale(1);
       }
       h3 {
         margin-top: -1%;
@@ -746,6 +756,30 @@ $para: #3d3d3d;
         font-size: 20px;
         letter-spacing: 0.5px;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .oasis {
+    .content {
+      margin-top: -5%;
+      margin-bottom: 1%;
+      height: 40vh;
+      transition: 0.5s ease;
+      h1 {
+        width: 80%;
+        font-size: 42px;
+      }
+      p {
+        width: 85%;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        text-align: center;
+      }
+    }
+    .images {
+      margin-top: -13%;
     }
   }
 }
@@ -815,7 +849,11 @@ $para: #3d3d3d;
   margin-left: 2rem;
 }
 .team-no-2 {
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 0rem;
+  width: 15%;
 }
 
 #footer {
@@ -835,6 +873,22 @@ $para: #3d3d3d;
 #contact {
   font-weight: 500;
 }
+#contact i{
+  transform: scale(2.5);
+  transition: 0.5s ease;
+}
+#contact i:nth-child(1):hover {
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease;
+}
+#contact i:nth-child(2):hover {
+  color: #c21ef0;
+}
+
+
 
 #footer {
   .glass-btn {
@@ -894,9 +948,19 @@ $para: #3d3d3d;
   .team {
     background: linear-gradient(to bottom, $bg 0% 60%, rgb(61, 61, 61) 60% 10%);
   }
+  #footer > p {
+    margin-top: -10%;
+    margin-bottom: 10%;
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 517px) {
+  #footer{
+    margin-left: 0%;
+  }
   #footer > p {
+    margin-top: -10%;
+    margin-bottom: 2%;
     font-size: 1.2rem;
   }
 }
@@ -916,6 +980,11 @@ $para: #3d3d3d;
   }
   .team-no-2 {
     margin-right: 0rem;
+    width: 150px;
+    height: 60px;
+    i{
+      transform: scale(1.5);
+    }
   }
 }
 
@@ -950,7 +1019,7 @@ $para: #3d3d3d;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   position: fixed;
-  bottom: 8%;
+  bottom: 15%;
   right: 20px;
   font-size: 18px;
   font-weight: bolder;
@@ -1057,7 +1126,7 @@ $para: #3d3d3d;
     .grey {
       display: block;
       position: absolute;
-      transform: translate(87vw, 25vh);
+      transform: translate(85vw, 5vh);
       z-index: 0;
     }
   }

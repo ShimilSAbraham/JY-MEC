@@ -658,6 +658,10 @@ body {
     letter-spacing: 0.5px;
     text-align: center;
   }
+  .gathering .images {
+    margin-top: -5%;
+    margin-bottom: 1%;
+  }
 }
 
 .past {
@@ -867,7 +871,8 @@ body {
   line-height: 1.2em;
   letter-spacing: 0.5px;
   margin-top: 2%;
-  width: 50%;
+  width: 65%;
+  margin-bottom: 2%;
   text-align: center;
 }
 
@@ -890,6 +895,8 @@ body {
 
 .oasis .images img {
   border-radius: 10px;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 
 .oasis .images h3 {
@@ -907,6 +914,10 @@ body {
   font-size: 30px;
   letter-spacing: 1.1px;
   color: #474747;
+}
+
+.oasis a {
+  margin-top: 3%;
 }
 
 @media (min-width: 800px) and (max-width: 1350px) {
@@ -948,7 +959,7 @@ body {
   }
   .oasis .images {
     margin-top: -5%;
-    margin-bottom: 5%;
+    margin-bottom: -7%;
     height: 55vh;
     width: 80%;
     -ms-flex-wrap: wrap;
@@ -957,12 +968,37 @@ body {
   .oasis .images img {
     width: 120px;
     height: 120px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .oasis .images h3 {
     margin-top: -1%;
     height: 50px;
     font-size: 20px;
     letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .oasis .content {
+    margin-top: -5%;
+    margin-bottom: 1%;
+    height: 40vh;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .oasis .content h1 {
+    width: 80%;
+    font-size: 42px;
+  }
+  .oasis .content p {
+    width: 85%;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  .oasis .images {
+    margin-top: -13%;
   }
 }
 
@@ -1049,7 +1085,16 @@ body {
 }
 
 .team-no-2 {
-  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 0rem;
+  width: 15%;
 }
 
 #footer {
@@ -1070,6 +1115,25 @@ body {
 
 #contact {
   font-weight: 500;
+}
+
+#contact i {
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#contact i:nth-child(1):hover {
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#contact i:nth-child(2):hover {
+  color: #c21ef0;
 }
 
 #footer .glass-btn {
@@ -1148,10 +1212,20 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, from(#f1efef), color-stop(60%, #3d3d3d));
     background: linear-gradient(to bottom, #f1efef 0% 60%, #3d3d3d 60% 10%);
   }
+  #footer > p {
+    margin-top: -10%;
+    margin-bottom: 10%;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 517px) {
+  #footer {
+    margin-left: 0%;
+  }
   #footer > p {
+    margin-top: -10%;
+    margin-bottom: 2%;
     font-size: 1.2rem;
   }
 }
@@ -1179,6 +1253,12 @@ body {
   }
   .team-no-2 {
     margin-right: 0rem;
+    width: 150px;
+    height: 60px;
+  }
+  .team-no-2 i {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -1230,7 +1310,7 @@ body {
           user-select: none;
   -webkit-tap-highlight-color: transparent;
   position: fixed;
-  bottom: 8%;
+  bottom: 15%;
   right: 20px;
   font-size: 18px;
   font-weight: bolder;
@@ -1357,8 +1437,8 @@ body {
   .oasis .grey {
     display: block;
     position: absolute;
-    -webkit-transform: translate(87vw, 25vh);
-            transform: translate(87vw, 25vh);
+    -webkit-transform: translate(85vw, 5vh);
+            transform: translate(85vw, 5vh);
     z-index: 0;
   }
   .team .shootStar {
