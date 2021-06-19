@@ -399,6 +399,17 @@ $para: #3d3d3d;
   }
 }
 
+@media (max-width: 400px) {
+  .about {
+    .title{
+      transform: translateY(-10px);
+      h1{
+        margin-bottom: 7%;
+      }
+    }
+  }
+}
+
 //-----------------Gatherings--------------------
 
 .gathering {

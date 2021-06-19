@@ -493,6 +493,16 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .about .title {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .about .title h1 {
+    margin-bottom: 7%;
+  }
+}
+
 .gathering {
   height: 100vh;
   background: #f1efef;
