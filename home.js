@@ -66,6 +66,7 @@ let item = document.querySelectorAll(".item");
 let menu = document.querySelector(".menu");
 
 // eda, i think you could use a loop here to make the code cleaner and shorter lol :)
+//i thought of doing that pakshe eventlisteners loopil ittal idk how it works :')
 amen.addEventListener("click", function () {
   landing.scrollIntoView();
 });
