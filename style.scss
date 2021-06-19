@@ -641,19 +641,19 @@ $para: #3d3d3d;
       transition: 0.5s ease;
       h1 {
         width: 80%;
-        font-size: 42px;
+        font-size: 44px;
       }
       p {
         width: 85%;
-        font-size: 17px;
+        font-size: 18px;
         letter-spacing: 0.5px;
         text-align: center;
         margin-top: 2%;
-        margin-bottom: 0%;
+        margin-bottom: -5%;
       }
     }
     .images{
-      margin-top: -10%;
+      margin-top: -12%;
     }
   }
 }
@@ -769,11 +769,11 @@ $para: #3d3d3d;
       transition: 0.5s ease;
       h1 {
         width: 80%;
-        font-size: 42px;
+        font-size: 44px;
       }
       p {
         width: 85%;
-        font-size: 17px;
+        font-size: 18px;
         letter-spacing: 0.5px;
         text-align: center;
       }
@@ -853,7 +853,7 @@ $para: #3d3d3d;
   align-items: center;
   justify-content: space-around;
   margin-right: 0rem;
-  width: 15%;
+  width: 10%;
 }
 
 #footer {
@@ -873,21 +873,24 @@ $para: #3d3d3d;
 #contact {
   font-weight: 500;
 }
-#contact i{
+.team-no-2 i{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: scale(2.5);
   transition: 0.5s ease;
 }
-#contact i:nth-child(1):hover {
-  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.5s ease;
-}
-#contact i:nth-child(2):hover {
-  color: #c21ef0;
+.team-no-2 i:hover {
+  color: #000000;
 }
 
+.team-no-2 i a{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 
 
 #footer {
@@ -915,6 +918,9 @@ $para: #3d3d3d;
   }
   #footer {
     min-height: 60vh;
+  }
+  .team-no-2 {
+    width: 20%;
   }
 }
 @media (max-width: 575px) {
@@ -953,6 +959,9 @@ $para: #3d3d3d;
     margin-bottom: 10%;
     font-size: 1.2rem;
   }
+  .team-no-2 {
+    width: 20%;
+  }
 }
 @media (max-width: 517px) {
   #footer{
@@ -978,12 +987,21 @@ $para: #3d3d3d;
   .team-no-1 {
     margin-left: 0rem;
   }
+  .team-no-1 p{
+    font-size: 17px;
+  }
+  .team-no-1 p:nth-child(1){
+    margin-bottom: 5px;
+  }
   .team-no-2 {
     margin-right: 0rem;
-    width: 150px;
+    width: 40%;
     height: 60px;
     i{
-      transform: scale(1.5);
+      transform: scale(2.4);
+      &:hover{
+        color: inherit;
+      }
     }
   }
 }
@@ -1069,7 +1087,7 @@ $para: #3d3d3d;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   .about {
     .light {
       position: absolute;

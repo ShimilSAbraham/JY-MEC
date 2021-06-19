@@ -816,18 +816,18 @@ body {
   }
   .past .content h1 {
     width: 80%;
-    font-size: 42px;
+    font-size: 44px;
   }
   .past .content p {
     width: 85%;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     text-align: center;
     margin-top: 2%;
-    margin-bottom: 0%;
+    margin-bottom: -5%;
   }
   .past .images {
-    margin-top: -10%;
+    margin-top: -12%;
   }
 }
 
@@ -989,11 +989,11 @@ body {
   }
   .oasis .content h1 {
     width: 80%;
-    font-size: 42px;
+    font-size: 44px;
   }
   .oasis .content p {
     width: 85%;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     text-align: center;
   }
@@ -1094,7 +1094,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-right: 0rem;
-  width: 15%;
+  width: 10%;
 }
 
 #footer {
@@ -1117,23 +1117,32 @@ body {
   font-weight: 500;
 }
 
-#contact i {
+.team-no-2 i {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transform: scale(2.5);
           transform: scale(2.5);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-#contact i:nth-child(1):hover {
-  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+.team-no-2 i:hover {
+  color: #000000;
 }
 
-#contact i:nth-child(2):hover {
-  color: #c21ef0;
+.team-no-2 i a {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 #footer .glass-btn {
@@ -1164,6 +1173,9 @@ body {
   }
   #footer {
     min-height: 60vh;
+  }
+  .team-no-2 {
+    width: 20%;
   }
 }
 
@@ -1217,6 +1229,9 @@ body {
     margin-bottom: 10%;
     font-size: 1.2rem;
   }
+  .team-no-2 {
+    width: 20%;
+  }
 }
 
 @media (max-width: 517px) {
@@ -1251,14 +1266,23 @@ body {
   .team-no-1 {
     margin-left: 0rem;
   }
+  .team-no-1 p {
+    font-size: 17px;
+  }
+  .team-no-1 p:nth-child(1) {
+    margin-bottom: 5px;
+  }
   .team-no-2 {
     margin-right: 0rem;
-    width: 150px;
+    width: 40%;
     height: 60px;
   }
   .team-no-2 i {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(2.4);
+            transform: scale(2.4);
+  }
+  .team-no-2 i:hover {
+    color: inherit;
   }
 }
 
@@ -1375,7 +1399,7 @@ body {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   .about .light {
     position: absolute;
     display: block;
