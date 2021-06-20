@@ -9,7 +9,9 @@
 <h1></h1>
 
 ### The Official Site ✨😇 :
-<div><a href="https://shimilsabraham.github.io/JY-MEC/" target="_blank">Click here</a></div>
+<div>Deployed at <a href="https://jy-mec.netlify.app/" target="_blank">Netlify</a> 👈</div>
+
+<br>
 
 <p align="center">
 <img alt="bible-quote" src="https://i.pinimg.com/564x/c5/1f/70/c51f703b554c4d892b635842675d55be.jpg" width="300px" />
