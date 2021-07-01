@@ -90,5 +90,5 @@ ___
 <h1></h1>
 
 <p align="center">
-<img alt="jesus-loves-you" src="./src/jesus-loves.svg" width="300px" />
+<img alt="you-know-jesus-loves-you" src="./src/jesus-loves.svg" width="300px" />
  </p>
